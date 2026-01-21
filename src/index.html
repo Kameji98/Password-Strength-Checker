@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Password Strength Checker (Vanilla JS)</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+  <div class="container">
+    <div class="card">
+      <h1>Password Strength Checker</h1>
+      <p>Type a password to get instant feedback based on common security rules.</p>
+
+      <div class="row">
+        <input id="pwd" type="password" placeholder="Enter a password..." autocomplete="off" />
+        <button id="toggle" type="button">Show</button>
+      </div>
+
+      <div class="hr"></div>
+
+      <div class="meterWrap">
+        <div class="meter" id="meter"></div>
+      </div>
+
+      <div class="row" style="margin-top: 12px;">
+        <div class="badge" id="label">—</div>
+        <small id="entropy"></small>
+      </div>
+
+      <ul class="rules" id="rules"></ul>
+
+      <div class="hr"></div>
+      <small>
+        Note: This is an educational strength check (not a guarantee). Use a password manager and unique passwords.
+      </small>
+    </div>
+  </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
